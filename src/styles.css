@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "@fontsource-variable/outfit/wght.css";
+
+:root {
+  --font-primary: "Outfit Variable", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  font-family: var(--font-primary);
+}
+
+body {
+  margin: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
