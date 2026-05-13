@@ -7,10 +7,13 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card variant="transparent" className="p-1">
-      <Card.Header className="gap-2">
+    <Card
+      variant="default"
+      className="rounded-xl p-5 shadow-none border bg-background-secondary/20"
+    >
+      <Card.Header className="gap-3">
         <Card.Title className=" font-medium ">{project.name}</Card.Title>
-        <Card.Description className=" max-w-md">
+        <Card.Description className=" text-balance ">
           {project.description}
         </Card.Description>
         {project.tectStackInfo && (
@@ -20,11 +23,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </span>
         )}
       </Card.Header>
-      <Card.Footer className=" flex flex-wrap gap-3">
+      <Card.Footer className=" flex flex-wrap gap-3 mt-4">
         {project.liveLink && (
           <a href={project.liveLink}>
             <Button variant="outline" className={"font-normal"}>
-              open
+              Web
             </Button>
           </a>
         )}

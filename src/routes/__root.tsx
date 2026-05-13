@@ -7,43 +7,30 @@ import appCss from "../styles.css?url";
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      {
-        charSet: "utf-8",
-      },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1",
-      },
-      {
-        title: "Raj's portfolio",
-      },
-      { content: "This is raj's portfolio website.", name: "description" },
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "Raj Shakya – Portfolio" },
+      { name: "description", content: "This is Raj's portfolio website." },
+
       // Open Graph
-      { content: "Raj", property: "og:title" },
+      { property: "og:title", content: "Raj Shakya – Portfolio" },
       {
-        content: "This is raj's portfolio website.",
         property: "og:description",
+        content: "This is Raj's portfolio website.",
       },
-      {
-        content: `/og.png`,
-        property: "og:image",
-      },
-      { content: "website", property: "og:type" },
-      {
-        content: `og.png`,
-        property: "og:logo",
-      },
+      { property: "og:image", content: "https://rajshakya.xyz/og.png" }, // ← absolute URL
+      { property: "og:url", content: "https://rajshakya.xyz" }, // ← add this
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Raj Shakya" },
+
       // Twitter Card
-      { content: "summary_large_image", name: "twitter:card" },
-      { content: "Raj", name: "twitter:title" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Raj Shakya – Portfolio" },
       {
-        content: "This is raj's portfolio website.",
         name: "twitter:description",
+        content: "This is Raj's portfolio website.",
       },
-      {
-        content: `/og.png`,
-        name: "twitter:image",
-      },
+      { name: "twitter:image", content: "https://rajshakya.xyz/og.png" }, // ← absolute URL
     ],
     links: [
       {

@@ -10,11 +10,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
+    "secrets": "wrangler secret bulk .env",
     "deploy": "pnpm run build && wrangler deploy",
     "cf-typegen": "wrangler types "
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.26.0",
+    "@fontsource-variable/geist-mono": "^5.2.7",
     "@fontsource-variable/outfit": "^5.2.8",
     "@heroui/react": "^3.0.3",
     "@heroui/styles": "^3.0.3",

@@ -19,12 +19,15 @@ export const Route = createFileRoute("/_app/")({
   component: Home,
 });
 
+
+
+
 function Home() {
   const { pageData, projectsData, educationData } = Route.useLoaderData();
 
   return (
     <main className="min-h-screen text-foreground tracking-tighter">
-      <div className="max-w-xl mx-auto px-4 sm:px-6 py-16 flex flex-col gap-16 md:gap-24">
+      <div className=" max-w-xl mx-auto px-4 sm:px-6 py-16 flex flex-col gap-16 md:gap-24">
         <HeroSection page={pageData} />
         <ProjectsSection projects={projectsData} />
         <EducationSection education={educationData} />

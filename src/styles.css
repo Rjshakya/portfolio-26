@@ -1,9 +1,11 @@
 @import "tailwindcss";
 @import "@heroui/styles";
 @import "@fontsource-variable/outfit/wght.css";
+@import "@fontsource-variable/geist-mono/wght.css";
 
 :root {
   --font-primary: "Outfit Variable", sans-serif;
+  --font-mono: "Geist Mono Variable", monospace;
 }
 
 * {
@@ -14,7 +16,7 @@ html,
 body,
 #app {
   min-height: 100%;
-  font-family: var(--font-primary);
+  font-family: var(--font-mono);
 }
 
 body {

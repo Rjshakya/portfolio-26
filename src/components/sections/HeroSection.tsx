@@ -20,17 +20,16 @@ export function HeroSection({ page }: HeroSectionProps) {
               className="size-28 object-cover rounded-lg"
             />
           </div>
-          {/* )} */}
 
-          <Card.Title className="mt-6 text-lg">
-            {" "}
-            {page.headerTitle ?? "Welcome"}
-          </Card.Title>
-          <Card.Description>{page.headerDescription}</Card.Description>
+          <Card.Description className=" ">
+            {page.headerDescription}
+          </Card.Description>
         </Card.Header>
 
         <Card.Content className="">
-          <p className="whitespace-pre-wrap ">{page.content}</p>
+          <p className="whitespace-pre-wrap text-sm leading-[160%]">
+            {page.content}
+          </p>
         </Card.Content>
       </Card>
     </section>

@@ -12,12 +12,12 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
 
   return (
     <section className="w-full">
-      <Card className="gap-8" variant="transparent">
-        <Card.Title className="text-lg">Projects</Card.Title>
-        <Card.Content className="gap-8">
-        {rows.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+      <Card className="gap-8 " variant="transparent">
+        <Card.Title className="text-lg">Work</Card.Title>
+        <Card.Content className="gap-4">
+          {rows.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </Card.Content>
       </Card>
     </section>
