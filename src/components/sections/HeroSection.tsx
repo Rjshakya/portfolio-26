@@ -26,8 +26,8 @@ export function HeroSection({ page }: HeroSectionProps) {
           </Card.Description>
         </Card.Header>
 
-        <Card.Content className="">
-          <p className="whitespace-pre-wrap text-sm leading-[160%]">
+        <Card.Content className=" ">
+          <p className="whitespace-pre-wrap text-xs md:text-sm leading-[160%]">
             {page.content}
           </p>
         </Card.Content>
